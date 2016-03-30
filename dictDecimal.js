@@ -34,6 +34,14 @@ var DictDecimal = {
 
   mod: function(a, b) {
     return this.toDict(this.toDec(a) % this.toDec(b));
+  },
+
+  multi: function(a, b) {
+    return this.toDict(this.toDec(a) * this.toDec(b));
+  },
+
+  sub: function(a, b) {
+    return this.toDict(this.toDec(a) - this.toDec(b));
   }
 
 }
