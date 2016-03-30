@@ -1,0 +1,14 @@
+{
+  "name": "dictDecimal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dictDecimal.js",
+  "scripts": {
+    "test": "node_modules/.bin/jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
