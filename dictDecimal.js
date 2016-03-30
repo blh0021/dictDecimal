@@ -8,13 +8,16 @@ var DictDecimal = {
     let s = 0;
     n = n.split('');
     for (let i in n) {
+      if (this.dict.indexOf(n[i]) == -1) {
+        throw new TypeError('char "' + n[i] + '" not in dictDecimal Dictionary'); 
+      }
       s += Math.pow(this.dict.length, n.length - i - 1) * this.dict.indexOf(n[i]);
     }
     return s;
   },
 
   toDict: function(n) {
-    if (n == 0) return n.toString();
+    if (n == 0) return this.dict[0];
     var l = this.dict.length;
     var s = '';
     while (n > 0) {
