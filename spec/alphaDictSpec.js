@@ -16,6 +16,22 @@ describe('add dict numbers', () => {
     expect(dd.add('a', 'a')).toBe('a');
   });
 
+  it('"ba+b" should be bb', () => {
+    expect(dd.add('ba', 'b')).toBe('bb');
+  });
+
+  it('"b-b" should be a', () => {
+    expect(dd.sub('b', 'b')).toBe('a');
+  });
+
+  it('"a-a" should be a', () => {
+    expect(dd.sub('b', 'b')).toBe('a');
+  });
+
+  it('"bf-b" should be be', () => {
+    expect(dd.sub('bf', 'b')).toBe('be');
+  });
+
   it('toDec "2" should throw error', () => {
     function getDec() {
       dd.toDec("2");
