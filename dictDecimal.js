@@ -18,8 +18,8 @@ var DictDecimal = {
 
   toDict: function(n) {
     if (n == 0) return this.dict[0];
-    var l = this.dict.length;
-    var s = '';
+    let l = this.dict.length;
+    let s = '';
     while (n > 0) {
       s = this.dict[n % l] + s;
       n = Math.floor(n / l);
