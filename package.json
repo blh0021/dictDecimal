@@ -1,12 +1,12 @@
 {
-  "name": "dictDecimal",
+  "name": "dictdecimal",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Math tool using dictionary as base notation.",
   "main": "dictDecimal.js",
   "scripts": {
     "test": "node_modules/.bin/jasmine"
   },
-  "author": "",
+  "author": "Ben Harrington",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^2.4.1"
